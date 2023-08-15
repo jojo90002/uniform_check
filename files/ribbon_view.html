@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+h1 {
+	display: inline;
+}
+
+.first {
+	position: relative;
+	left: 18px;
+}
+
+.third {
+	position: relative;
+	right: 18px;
+}
+
+</style>
+</head>
+<body bgcolor='grey' id="body">
+<center>
+<br>
+<font face='monospace' size='+1'>
+<h1 align='center'>Your Ribbons:<h1>
+<br><br><br>
+<table align='center' border='0' cellspacing='0' cellpadding='0'>
+<tr><td align='center'>
+<h1 id='42' style='margin-left: 0;'></h1>
+<h1 id='41'></h1>
+<h1 id='40'></h1>
+</td></tr><tr><td align='center' style='position: relative; bottom: 43px;'>
+<h1 id='39'></h1>
+<h1 id='38'></h1>
+<h1 id='37'></h1>
+</td></tr><tr><td align='center' style='position: relative; bottom: 86px;'>
+<h1 id='36'></h1>
+<h1 id='35'></h1>
+<h1 id='34'></h1>
+</td></tr><tr><td align='center' style='position: relative; bottom: 129px;'>
+<h1 id='33'></h1>
+<h1 id='32'></h1>
+<h1 id='31'></h1>
+</td></tr><tr><td align='center' style='position: relative; bottom: 172px;'>
+<h1 id='30'></h1>
+<h1 id='29'></h1>
+<h1 id='28'></h1>
+</td></tr><tr><td align='center' style='position: relative; bottom: 215px;'>
+<h1 id='27' class='first'></h1>
+<h1 id='26'></h1>
+<h1 id='25' class='third'></h1>
+</td></tr><tr><td align='center' style='position: relative; bottom: 258px;'>
+<h1 id='24' class='first'></h1>
+<h1 id='23'></h1>
+<h1 id='22' class='third'></h1>
+</td></tr><tr><td align='center' style='position: relative; bottom: 301px;'>
+<h1 id='21' class='first'></h1>
+<h1 id='20'></h1>
+<h1 id='19' class='third'></h1>
+</td></tr><tr><td align='center' style='position: relative; bottom: 344px;'>
+<h1 id='18' class='first'></h1>
+<h1 id='17'></h1>
+<h1 id='16' class='third'></h1>
+</td></tr><tr><td align='center' style='position: relative; bottom: 387px;'>
+<h1 id='15' class='first'></h1>
+<h1 id='14'></h1>
+<h1 id='13' class='third'></h1>
+</td></tr><tr><td align='center' style='position: relative; bottom: 430px;'>
+<h1 id='12' class='first'></h1>
+<h1 id='11'></h1>
+<h1 id='10' class='third'></h1>
+</td></tr><tr><td align='center' style='position: relative; bottom: 473px;'>
+<h1 id='9' class='first'></h1>
+<h1 id='8'></h1>
+<h1 id='7' class='third'></h1>
+</td></tr><tr><td align='center' style='position: relative; bottom: 516px;'>
+<h1 id='6' class='first'></h1>
+<h1 id='5'></h1>
+<h1 id='4' class='third'></h1>
+</td></tr><tr><td align='center' style='position: relative; bottom: 559px;'>
+<h1 id='3' class='first'></h1>
+<h1 id='2'></h1>
+<h1 id='1' class='third'></h1>
+</td></tr><tr><td align='center'>
+&nbsp;</td></tr></table>
+<br><br><br><br>
+</center>
+
+<script>
+const searchParams = new URLSearchParams(window.location.search);
+var num = 1
+function renderImage(image, name, number) {
+	var tag_src = Number(searchParams.get(name))
+	document.write(typeof tag_src, typeof number)
+	var img = document.createElement('img');
+	img.src = 'https://jojo90002.github.io/uniform_check/ribbons/cadr1.png', 'crr'
+	if (tag_src == number){
+		document.write("d")
+		var img = document.createElement('img');
+		img.src = image;
+		img.style = "border: 2px solid black"
+		document.body.appendChild(img)
+		document.getElementById(num.toString()).appendChild(img);
+		num += 1;
+		document.write("s")
+	}
+}
+
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/cadr1.png', 'crr', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/encamp1.png', 'er', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/ncsa1.png', 'csar', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/cac.png', 'cacr', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/ncgc1.png', 'ncgc', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/ncc1.png', 'ncc', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/iace1.png', 'iace', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/commun1.png', 'csr', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/homeland1.png', 'hsr', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/disaster1.png', 'drr', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/sar1.png', 'sarr', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/find1.png', 'fr', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/red2.png', 'rsr', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/crisis.png', 'ccsr', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/vfwnco.png', 'vfwnco', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/vfwo.png', 'vfwo', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/afsa.png', 'afsa', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/afa.png', 'afa', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/curry.png', 'jca', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/arnold.png', 'haa', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/feik.png', 'mfa', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/wright.png', 'wba', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/ricken.png', 'era', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/5.png', 'ach5', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/doolittle.png', 'jda', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/goddard.png', 'rga', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/armstrong.png', 'naa', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/mitchel.png', 'bma', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/earheart.png', 'aea', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/eaker.png', 'iea', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/spaatz.png', 'csa', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/unitc1.png', 'aca', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/natc1.png', 'ncuc', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/life1.png', 'lsa', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/ach1.png', 'aca', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/cmdr1.png', 'cca', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/merit1.png', 'msa', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/except1.png', 'esa', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/distin1.png', 'dsm', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/bronze1.png', 'bmv', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/silver1.png', 'smv', 1);
+renderImage('https://jojo90002.github.io/uniform_check/ribbons/afoea.png', 'afoea', 1);
+</script>
+
+</body>
+</html>
